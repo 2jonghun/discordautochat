@@ -11,21 +11,21 @@ with open('./config.json', 'r') as f:
   my_password = config_data['my_password']
   CHANNEL_URL = config_data['CHANNEL_URL']
   chat_delay = config_data['chat_delay']
-  words = config_data['words']
+  chat_words = config_data['words']
   f.close()
 
-def words(pre_word, words):
-  for word in words:
+def words(pre_word, chat_words):
+  for word in chat_words:
 
     if word == pre_word:
-      new_words = []
+      new_chat_words = []
       
-      for new_word in words:
+      for new_word in chat_words:
         if new_word != word:
-          new_words.append(new_word)
-      return new_words
+          new_chat_words.append(new_word)
+      return new_chat_words
 
-  return words
+  return chat_words
 
 if __name__ == '__main__':
   s = InitSelenium(my_id, my_password)
@@ -53,7 +53,7 @@ if __name__ == '__main__':
   random_word = ''
 
   while True:
-    words_list = words(random_word, words)
+    words_list = words(random_word, chat_words)
     random_int = random.randint(0, len(words_list)-1)
     random_word = words_list[random_int]
 
