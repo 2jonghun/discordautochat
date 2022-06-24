@@ -1,4 +1,4 @@
-<div align="center"><h1>#Discord Auto Chat</h1>
+#Discord Auto Chat
 Discord Auto Chat with Selenium
 </div>
 
