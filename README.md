@@ -1,6 +1,5 @@
 #Discord Auto Chat
 Discord Auto Chat with Selenium
-</div>
 
 <h3>Installation</h3>
 
