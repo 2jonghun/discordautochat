@@ -1,7 +1,5 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from initselenium import InitSelenium
 from datetime import datetime
 import time
@@ -22,7 +20,7 @@ def words(now_time, pre_word):
 
     if word == pre_word:
       new_words = []
-      
+
       for new_word in words:
         if new_word != word:
           new_words.append(new_word)
