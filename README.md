@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Discord Auto Chat
-=======
 <div align="center"><h1>Discord Auto Chat</h1>
 Discord Auto Chat with Selenium
 </div>
@@ -32,6 +29,3 @@ Discord Auto Chat with Selenium
 
 
 **<h3>You have to hcaptcha Manually</h3>**
-
-
->>>>>>> a6300b7aa826506182129cef221370cbc041f963
