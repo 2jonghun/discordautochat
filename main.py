@@ -1,7 +1,6 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from initselenium import InitSelenium
-import time
 import json
 import random
 
@@ -14,12 +13,12 @@ with open('./config.json', 'r') as f:
   words = config_data['words']
   f.close()
 
-def words(now_time, pre_word):
+def words(pre_word, words):
   for word in words:
 
     if word == pre_word:
       new_words = []
-
+      
       for new_word in words:
         if new_word != word:
           new_words.append(new_word)
@@ -53,7 +52,7 @@ if __name__ == '__main__':
   random_word = ''
 
   while True:
-    words_list = words(current_m, random_word)
+    words_list = words(random_word, words)
     random_int = random.randint(0, len(words_list)-1)
     random_word = words_list[random_int]
 
