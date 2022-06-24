@@ -1,7 +1,6 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from initselenium import InitSelenium
-from datetime import datetime
 import time
 import json
 import random
@@ -54,9 +53,6 @@ if __name__ == '__main__':
   random_word = ''
 
   while True:
-    now = datetime.now()
-    current_m = now.minute
-
     words_list = words(current_m, random_word)
     random_int = random.randint(0, len(words_list)-1)
     random_word = words_list[random_int]
