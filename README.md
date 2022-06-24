@@ -1,2 +1,1 @@
-# Discordautochat
-You have to login Manually.
+# Discord Auto Chat
