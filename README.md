@@ -1,4 +1,4 @@
-#Discord Auto Chat
+# Discord Auto Chat
 Discord Auto Chat with Selenium
 
 <h3>Installation</h3>
