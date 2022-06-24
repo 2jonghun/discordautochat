@@ -19,8 +19,10 @@ with open('./config.json', 'r') as f:
 
 def words(now_time, pre_word):
   for word in words:
+
     if word == pre_word:
       new_words = []
+      
       for new_word in words:
         if new_word != word:
           new_words.append(new_word)
@@ -51,13 +53,13 @@ if __name__ == '__main__':
       time.sleep(1)
 
   chat_count = 1
-  pre_word = ""
+  random_word = ''
 
   while True:
     now = datetime.now()
     current_m = now.minute
 
-    words_list = words(current_m, pre_word)
+    words_list = words(current_m, random_word)
     random_int = random.randint(0, len(words_list)-1)
     random_word = words_list[random_int]
 
